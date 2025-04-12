@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Календарь</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<header>
+		<h1 class="title">Календарь Январь 2025</h1>
+		<p class="subtitle">С Новым годом! Пусть новый год принесет только радость и позитив</p>
+	</header>
+
+	<div class="calendar">
+		<div class="days-of-week">
+			<div class="day">ПН</div>
+			<div class="day">ВТ</div>
+			<div class="day">СР</div>
+			<div class="day">ЧТ</div>
+			<div class="day">ПТ</div>
+			<div class="day">СБ</div>
+			<div class="day">ВС</div>
+		</div>
+
+		<div class="days">
+			<div class="day-number"></div>
+			<div class="day-number"></div>
+
+			<div class="day-number" onclick="showTooltip(this)">1</div>
+			<div class="tooltip">Venom</div>
+
+			<div class="day-number" onclick="showTooltip(this)">2</div>
+			<div class="tooltip">Погуляй с Venom</div>
+			<div class="day-number" onclick="showTooltip(this)">3</div>
+			<div class="tooltip">Покорми Venom</div>
+			<div class="day-number" onclick="showTooltip(this)">4</div>
+			<div class="tooltip">Собери Venom в школу</div>
+			<div class="day-number" onclick="showTooltip(this)">5</div>
+			<div class="tooltip">Помоги Venom с домашим заданием</div>
+
+			<div class="day-number" onclick="showTooltip(this)">6</div>
+			<div class="tooltip">Поиграй с Venom</div>
+			<div class="day-number" onclick="showTooltip(this)">7</div>
+			<div class="tooltip">Уложи Venom спать</div>
+			<div class="day-number" onclick="showTooltip(this)">8</div>
+			<div class="tooltip">Заботься о Venom</div>
+			<div class="day-number" onclick="showTooltip(this)">9</div>
+			<div class="tooltip">Venom тебя любит!</div>
+			<div class="day-number" onclick="showTooltip(this)">10</div>
+			<div class="tooltip">Купи Venom вкусности</div>
+			<div class="day-number" onclick="showTooltip(this)">11</div>
+			<div class="tooltip">Venom вызвали к директору</div>
+			<div class="day-number" onclick="showTooltip(this)">12</div>
+			<div class="tooltip">Venom получил два на уроке</div>
+
+			<div class="day-number" onclick="showTooltip(this)">13</div>
+			<div class="tooltip">Накажите Venom</div>
+			<div class="day-number" onclick="showTooltip(this)">14</div>
+			<div class="tooltip">Venom сказал вам что исправится</div>
+			<div class="day-number" onclick="showTooltip(this)">15</div>
+			<div class="tooltip">Venom сдал все экзамены на 5</div>
+			<div class="day-number" onclick="showTooltip(this)">16</div>
+			<div class="tooltip">Venom поступил в хорошую шарагу</div>
+			<div class="day-number" onclick="showTooltip(this)">17</div>
+			<div class="tooltip">Venom хорошо там выучился</div>
+			<div class="day-number" onclick="showTooltip(this)">18</div>
+			<div class="tooltip">Venom устроился на работу</div>
+			<div class="day-number" onclick="showTooltip(this)">19</div>
+			<div class="tooltip">Venomа наградили премией</div>
+
+			<div class="day-number" onclick="showTooltip(this)">20</div>
+			<div class="tooltip">Venom купил вам thanksgivivng</div>
+			<div class="day-number" onclick="showTooltip(this)">21</div>
+			<div class="tooltip">Venom дал вам teamwork</div>
+			<div class="day-number" onclick="showTooltip(this)">22</div>
+			<div class="tooltip">Venom повысили в должности</div>
+			<div class="day-number" onclick="showTooltip(this)">23</div>
+			<div class="tooltip">Venom стал директором компании</div>
+			<div class="day-number" onclick="showTooltip(this)">24</div>
+			<div class="tooltip">Venom теперь имеет высокий доход</div>
+			<div class="day-number" onclick="showTooltip(this)">25</div>
+			<div class="tooltip">Venom теперь стал оплачивать вам всё что захотите</div>
+			<div class="day-number" onclick="showTooltip(this)">26</div>
+			<div class="tooltip">Venom умер...</div>
+
+			<div class="day-number" onclick="showTooltip(this)">27</div>
+			<div class="tooltip">Прошёл год без Venom. Меня трясет, и у меня серьезные психические срывы.</div>
+			<div class="day-number" onclick="showTooltip(this)">28</div>
+			<div class="tooltip">Venom гниёт на дне могилки</div>
+			<div class="day-number" onclick="showTooltip(this)">29</div>
+			<div class="tooltip">Venom больше нет..</div>
+			<div class="day-number" onclick="showTooltip(this)">30</div>
+			<div class="tooltip">Venom умер....................................</div>
+			<div class="day-number" onclick="showTooltip(this)">31</div>
+			<div class="tooltip">Venom спи спокойно.</div>
+			<div class="day-number"></div>
+			<div class="day-number"></div>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	function showTooltip(dayElement){
+		const tooltip = dayElement.nextElementSibling;
+		tooltip.style.display=tooltip.style.display==='block'?'none':'block';
+	}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(https://aif-s3.aif.ru/images/025/907/e2ef6f055209cf5889ef4b29e998a920.jpg);
+	color: black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.container{
+	background: white;
+	padding: 20px;
+	border-radius: 15px;
+	width: 600px;
+}
+header{
+	margin-bottom: 30px;
+}
+.title{
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.subtitle{
+	font-size: 20px;
+	color: brown;
+}
+.calendar{
+	background-color: #ffffff;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.days-of-week{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.day{
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: #f7311f;
+}
+.days{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+}
+.day-number{
+	font-size: 1.2rem;
+	padding: 20px;
+	background-color: #c9d9ca;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.day-number:hover{
+	background-color: #90EE90;
+	transform: scale(1.06);
+}
+.day-number:active{
+	background-color: #228B22;
+	color: #fff;
+}
+.day-number:nth-child(3){
+	background-color: #228B22;
+	font-weight: bold;
+}
+.tooltip{
+	display: none;
+	position: absolute;
+	background-color: #FFCC00;
+	color: #1F0E11;
+	border-radius: 7px;
+	padding: 15px;
+	box-shadow: 10 10 10px rgba(5 5 5 5);
+	transform: translateY(-200%);
+	z-index: 10;
+	font-size: 17px;
+	font-weight: bold;
+}
+.day-number:hover +.tooltip{
+	display: block;
+}
